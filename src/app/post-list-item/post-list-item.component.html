@@ -1,0 +1,12 @@
+<div [ngStyle]="{color: getColor()}" [ngClass]="{'list-group-item': true,
+'list-group-item-success': love === 'green',
+'list-group-item-danger': love === 'red'}" class="col-xs-12 list-group-item">
+  <p style="float:right; color:grey">{{created_at | date : 'short'}}</p>
+  <h4><strong>{{title}}</strong></h4>
+  <p>{{content}}</p>
+  <ul class="list-group">
+    <button class="btn btn-success btn-sm" (click)="onLoveIts()"> Love It ! </button>
+    <button class="btn btn-danger btn-sm" style="margin-left:2mm" (click)="onDontLoveIts()"> Don't Love It ! </button>
+    <p> {{loveIts}} </p>
+  </ul>
+</div>

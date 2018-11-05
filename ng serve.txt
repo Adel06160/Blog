@@ -1,0 +1,1 @@
+C:\Users\amedjdoub\AppData\Roaming\npm\ng serve
